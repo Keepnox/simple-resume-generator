@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Kanit:wght@400;700&family=Noto+Serif:ital,wght@0,700;1,400&family=Prompt:wght@400;700&family=Roboto+Mono:wght@300;600&family=Roboto+Slab:wght@400;700&display=swap');
+
+
+:root {
+  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
+  --main-font-1: 'Roboto Slab', serif;
+  --main-font-2: 'EB Garamond', serif;
+  --main-font-3: 'Kanit', sans-serif;
+  --main-font-4: 'Noto Serif', serif;
+  --main-font-5: 'Prompt', sans-serif;
+  --main-font-6: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f0f2f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, input {
+  font-family: var(--main-font-3);
+}
