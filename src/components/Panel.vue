@@ -1,21 +1,30 @@
 <template lang="pug">
 #panel.container
   .panel-header
-    p {{sectionTitle}}
-  .panel-body
-    slot
+    .panel-header-section
+      .title
+        p {{sectionTitle}}
+      .buttons
+        .close-button(@click="panelActive = !panelActive") x
+  .panel-body(:class="{'active': panelActive}")
+    .content
+      slot
 </template>
 
 
 <script>
 export default {
-  props: ["sectionTitle"]
+  props: ["sectionTitle"],
+  data() {
+    return {
+      panelActive: true
+    }
+  },
 }
 </script>
 
 <style lang="sass" scoped>
 #panel
-
   background-color: white
   border: 1px solid #f0f0f0
   box-sizing: border-box
@@ -25,15 +34,23 @@ export default {
   border-radius: 20px
   .panel-header
     box-sizing: border-box
-    // min-height: 48px
-    // margin-bottom: -1px
     padding: 0 24px
     color: rgba(0,0,0,.85)
     font-weight: 500
     font-size: 16px
-    // background: transparent
     border-bottom: 1px solid #f0f0f0
+    .panel-header-section
+      display: flex
+      justify-content: space-between
+      align-items: center
   .panel-body
-    padding: 14px 24px
+    overflow: hidden
+    max-height: 0px
+    transition: .5s all cubic-bezier(1, 0, 1, 1),
+    &.active
+      max-height: 99999px
+      transition: .5s all cubic-bezier(1, 0, 1, 1),
+    .content
+      padding: 14px 24px
 
 </style>

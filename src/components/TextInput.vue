@@ -1,14 +1,20 @@
 <template lang="pug">
 .form-el
-  label(for="fname") First Name
-  input(type="text" name="fname")
+  label(:for="inputName") {{inputName}}
+  input(type="text" :name="inputName")
 </template>
+
+<script>
+export default {
+  props: ["inputName"]
+}
+</script>
 
 <style lang="sass" scoped>
 .form-el
   display: flex
   flex-direction: column
-
+  margin-bottom: 22px
   label
     align-content: center
     font-size: 14px
@@ -17,7 +23,6 @@
     display: inline-flex
     padding-bottom: 8px
   input
-
     box-sizing: border-box
     margin: 0
     list-style: none
@@ -34,13 +39,15 @@
     border: 1px solid #d9d9d9
     border-radius: 20px
     transition: all .3s
+    outline-color: #F7249A
     &:hover
       border-color: #F7249A
       border-right-width: 1px
+    &:focus-:visible
+      outline-color: #f7249a !important
+      border-color: #F7249A !important
+      border-right-width: 1px
+    &:focus
+      border-color: #F7249A !important
+      border-right-width: 1px
 </style>
-
-<script>
-export default {
-
-}
-</script>
