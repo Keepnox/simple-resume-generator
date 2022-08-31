@@ -15,7 +15,9 @@
     "pug": "^3.0.2",
     "sass": "^1.54.5",
     "uuid": "^7.0.3",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-uuid": "^3.0.0",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",

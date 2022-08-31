@@ -5,16 +5,18 @@
       .title
         p {{sectionTitle}}
       .buttons
-        .close-button(@click="panelActive = !panelActive") x
-  .panel-body(:class="{'active': panelActive}")
-    .content
-      slot
+        button.remove-button(v-if="type === 'job-item'" @click="$emit('k-click')") RM
+        button.close-button(@click="panelActive = !panelActive") x
+  transition(name="selam")
+    .panel-body(:class="{'active': panelActive}")
+      .content
+        slot
 </template>
 
 
 <script>
 export default {
-  props: ["sectionTitle"],
+  props: ["sectionTitle", "type", "k-click"],
   data() {
     return {
       panelActive: true
@@ -32,6 +34,8 @@ export default {
   color: rgba(0,0,0,.85)
   background: #fff
   border-radius: 20px
+  margin-bottom: 22px
+  // scrollbar-gutter: revert
   .panel-header
     box-sizing: border-box
     padding: 0 24px
@@ -45,11 +49,14 @@ export default {
       align-items: center
   .panel-body
     overflow: hidden
-    max-height: 0px
-    transition: .5s all cubic-bezier(1, 0, 1, 1),
+    max-height: 0
+    transition: max-height .5s ease-in-out
     &.active
-      max-height: 99999px
-      transition: .5s all cubic-bezier(1, 0, 1, 1),
+      max-height: 500px
+      transition: max-height .5s ease-in-out
+      overflow-y: scroll
+      .panel-body
+        overflow: auto
     .content
       padding: 14px 24px
 

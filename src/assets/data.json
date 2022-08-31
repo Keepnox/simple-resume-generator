@@ -1,0 +1,79 @@
+{
+  "userInfo": {
+    "firstName": "Kaan",
+    "lastName": "Şahin",
+    "position": "Chief Technology Officer",
+    "address": "Izmir - Turkey",
+    "phone": "+90 (532) 133 85 54",
+    "email": "me@keepnox.com",
+    "website": "keepnox.com"
+  },
+  "jobs": [
+    {
+      "title": "Technial Support Manager",
+      "companyName": "Spartakus Software - Full Time",
+      "date": "May 2011 - Tem 2011",
+      "description": "Mikrotim is a technology company located in Izmir, we provide services such as software, server, hardware support and renewal to customers who are using Mikro Software."
+    },
+    {
+      "title": "Software Developer",
+      "companyName": "Mikrotim Technology - Full Time",
+      "date": "Agu 2010 - May 2011",
+      "description": "Spartakus 'Nomos ERP' application offers a range of solutions that will respond to all the processes of your company."
+    },
+    {
+      "title": "Sales Manager",
+      "companyName": "Vatan Computer - Full Time",
+      "date": "Tem 2011 - May 2013",
+      "description": "It increases customer sales rates by providing customers with Mcafee and Norton antivirus software. There are services such as information, presentation, installation and promotion."
+    },
+    {
+      "title": "Frontend Developer",
+      "companyName": "inndir.com - Full Time",
+      "date": "Sub 2013 - Oca 2015",
+      "description": ""
+    },
+    {
+      "title": "Frontend Developer",
+      "companyName": "parmaklarim.com - Full Time",
+      "date": "Nis 2013 - Nis 2015",
+      "description": ""
+    },
+    {
+      "title": "Frontend Developer",
+      "companyName": "parmaklarim.com - Full Time",
+      "date": "Nis 2013 - Nis 2015",
+      "description": ""
+    },
+    {
+      "title": "Product Development",
+      "companyName": "Atanova Ventures - Full Time",
+      "date": "May 2013 - ~",
+      "description": ""
+    },
+    {
+      "title": "Full Stack Developer",
+      "companyName": "dugunyardimcisi.com - Full Time",
+      "date": "Tem 2019 - Kas 2019",
+      "description": "DüğünYardımcısı.com, is wedding website that brings together all the wedding venues, companies and professionals you are looking for for your wedding."
+    },
+    {
+      "title": "Full Stack Developer",
+      "companyName": "dugunbuketi.com - Full Time",
+      "date": "Kas 2019 - May 2020",
+      "description": "Düğünbuketi.com is a wedding web portal that bring together wedding venues for couples that are decided to marry. DüğünBuketi.com was established in 2016."
+    },
+    {
+      "title": "Full Stack Developer",
+      "companyName": "dugunbuketi.com - Full Time",
+      "date": "Kas 2019 - May 2020",
+      "description": "Düğünbuketi.com is a wedding web portal that bring together wedding venues for couples that are decided to marry. DüğünBuketi.com was established in 2016."
+    },
+    {
+      "title": "CTO",
+      "companyName": "Squamobi - Full Time",
+      "date": "May 2021 - ~",
+      "description": ""
+    }
+  ]
+}

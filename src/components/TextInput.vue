@@ -1,12 +1,15 @@
 <template lang="pug">
 .form-el
   label(:for="inputName") {{inputName}}
-  input(type="text" :name="inputName")
+  input(type="text" :name="inputName" v-on:input="$emit('update:modelValue', $event.target.value)"
+      :value="modelValue")
 </template>
 
 <script>
 export default {
-  props: ["inputName"]
+  props: ["inputName","modelValue"],
+  emits: ["update:modelValue"],
+
 }
 </script>
 
@@ -39,15 +42,15 @@ export default {
     border: 1px solid #d9d9d9
     border-radius: 20px
     transition: all .3s
-    outline-color: #F7249A
+    outline-color: var(--main-pink-color)
     &:hover
-      border-color: #F7249A
+      border-color: var(--main-pink-color)
       border-right-width: 1px
     &:focus-:visible
-      outline-color: #f7249a !important
-      border-color: #F7249A !important
+      outline-color: var(--main-pink-color) !important
+      border-color: var(--main-pink-color) !important
       border-right-width: 1px
     &:focus
-      border-color: #F7249A !important
+      border-color: var(--main-pink-color) !important
       border-right-width: 1px
 </style>
